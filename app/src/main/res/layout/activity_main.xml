@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    tools:context=".MainActivity">
+
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <pl.droidsonroids.gif.GifImageView
+                android:layout_width="325dp"
+                android:layout_height="207dp"
+                android:layout_gravity="center|center_horizontal|center_vertical"
+                android:background="#fff"
+                android:src="@drawable/bday" />
+
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="match_parent"
+                android:layout_height="289dp"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/xyz" />
+
+            <com.example.Happy_Birthday.TypeWriter
+                android:id="@+id/textView"
+                android:layout_width="479dp"
+                android:layout_height="333dp"
+                android:layout_weight="1"
+                android:background="@drawable/grad_list"
+                android:fontFamily="cursive"
+                android:includeFontPadding="false"
+                android:paddingEnd="100dp"
+                android:text="Sister, Happy Birthday!! On this special day we celebrate another year of your life. I love you a lot and I'm very proud to have you as a sister. I couldn’t ask for a better one, that's for sure. You are such a special person in my life and the dearest sibling I could’ve ever wished for. \n Your support, wisdom, and guidance over the years have all meant the world to me. Thank you for all that you’ve done for me, and I’m wishing you the happiest of birthdays today, my lovely sister. You are so meaningful to me and no matter how old you become, I will forever have a little sister to love and adore."
+                android:textColor="#4C001B"
+                android:textSize="20sp"
+                app:fontFamily="cursive" />
+
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
